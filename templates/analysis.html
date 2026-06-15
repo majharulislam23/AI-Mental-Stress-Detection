@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<section class="page center"><div class="loader"></div><h1>AI is analyzing your stress pattern...</h1><p>Processing mood, sleep, pressure, anxiety, text, and questionnaire answers.</p></section><script>setTimeout(()=>location.href='{{url_for('result',test_id=test_id)}}',1400)</script>{% endblock %}

@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const c=document.getElementById('historyChart');if(c&&window.Chart){const labels=JSON.parse(c.dataset.labels||'[]');const scores=JSON.parse(c.dataset.scores||'[]');new Chart(c,{type:'line',data:{labels,datasets:[{label:'Stress Score',data:scores,tension:.35,fill:false}]},options:{responsive:true,scales:{y:{min:0,max:100}}}})}});
